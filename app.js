@@ -7,6 +7,9 @@ let highScore=0;
 let h2= document.querySelector("h2");
 let currScore=0;
 let h3=document.querySelector("h3");
+let strt=document.getElementById("strtBtn");
+console.dir(strt);
+
 
 function updateScore(){
     currScore++;
@@ -23,13 +26,18 @@ function Score(){
 
     
 }
-  
+strt.addEventListener("click",function(){
+    if(started==false){
+        console.log("game started");
+        started=true;
+        levelUp();
+    }
+});
 document.addEventListener("keypress", function(){
     if(started==false){
         console.log("game started");
         started=true;
         levelUp();
-
     }
 });
 
