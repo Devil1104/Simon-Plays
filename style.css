@@ -1,6 +1,10 @@
 body{
     text-align: center;
 }
+
+.rules{
+    text-align: left;
+}
 .btn{
     border: 5px solid black;
     border-radius: 20%;

@@ -7,20 +7,30 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <p class="rules">Here are the Rules:<br>
+        1.Start the game by pressing the start button.<br>
+        2.Any of the 4 colour will blink.<br>
+        3.click the same colour once.<br>
+        4.Any of the 4 colour will blink.<br>
+        5.Click the 1st blinked colour and then the newly blinked colour.<br>
+        6.Continue the process by keeping the sequence in Mind.<br>
+    </p>
+    
     <h1>Simon Says Game</h1>
     <h2>Press any key to start the game</h2>
+    <button id="strtBtn"> Start Game</button>
 
     <div class="btn-container">
         <div class="line-one">
-            <div class="btn grey" type="button" id="grey">1</div>
-            <div class="btn white" type="button" id="white">2</div>
+            <div class="btn grey" type="button" id="grey"></div>
+            <div class="btn white" type="button" id="white"></div>
         </div>
         <div class="line-two">
-            <div class="btn yellow" type="button" id="yellow">3</div>
-            <div class="btn black" type="button" id="black">4</div>
+            <div class="btn yellow" type="button" id="yellow"></div>
+            <div class="btn black" type="button" id="black"></div>
         </div>
     </div>
-    <button id="strtBtn"> Start Game</button>
+    
 
     <h3 id="highScore">Highest Score </h3>
     <h3 id="currScore">Current Score</h3>
